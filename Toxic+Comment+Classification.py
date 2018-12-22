@@ -177,13 +177,4 @@ PAC_bagging = Pipeline([
                 ('clf', OneVsRestClassifier(BaggingClassifier(PassiveAggressiveClassifier()), n_jobs=1)),
             ])
 MultiLabelTrain(PAC_bagging)
-    
-#def testData(pipeline)    
-#    for category in categories:
-#        print('... Processing {}'.format(category))
-#        prediction = pipeline.predict(X_test)
-#        print('Test accuracy is {}'.format(accuracy_score(test[category], prediction)))    
-    
-    
-
-        
+   
