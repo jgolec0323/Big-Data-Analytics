@@ -94,8 +94,6 @@ def MultiLabelTrain(pipeline):
     lis = [roc_auc_scores,f1_scores]
     score_df = pd.DataFrame(lis, columns = categories)
     score_df.insert(loc=0, column = 'Metric', value = metrics)
-    #averages = [np.mean(roc_auc_scores), np.mean(f1_scores)]
-    #score_df.insert(loc=7, column = 'Averages', value = averages]
     print(score_df)
 
 # Naive Bayes
