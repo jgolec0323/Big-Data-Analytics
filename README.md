@@ -24,7 +24,7 @@ The first step, preprocessing, is mainly cleaning the data by removing any unnec
 - Removed numbers, usernames, and IP addresses.
 - Removed stop words (e.g. “and”, “or”, “the”, “that”, etc.)
 
-## Exploratory Analysis
+### Exploratory Analysis
 
 
 ### Feature Generation
@@ -36,6 +36,22 @@ The term frequency is the frequency of a word in each comment string. The Invers
 ## Modeling 
 
 Multi-label classificiation
+We trained our models using a one-vs-the-rest approach in order to train a model to classify multiple labels
 
-Models: 
+Models:
+- Logistic Regression
+- Linear Support Vector Classification
+- Ridge Classifier
+- Perceptron
+- Stochastic Gradient Descent
+- Passive Aggressive Classifier
+- Naive Bayes (NB)
+
+## Results & Discussion
+
+In order to compare the results we used two quantitative metrics - ROC-AUC score and F1 score. 
+
+The ROC-AUC score is the area under the Receiver Operating curve. The value of the ROC-AUC score can range from 0 to 1. In a perfect classifier, the ROC-AUC score is equivalent to 1. In a random classifier, the ROC-AUC score is equivalent to 0.5. The ROC-AUC curve is calculated by the true positive rate (sensitivity) vs false positive rate (1-specificity). This is calculated to show the trade-off between specificity and sensitivity. In an ideal world, a classifier will exhibit high sensitivity and specificity. 
+
+The F1 score was also used for model evaluation and performance. The F1 score is the harmonic mean of precision and recall. Precision is the number of correctly classified positive instances out of the total number of instances classified as positive. Recall is the number of correctly classified positive instances out of total number of true positive instances.
 
