@@ -14,7 +14,7 @@ comment_text: string of data that represents the comment
 
 toxic,severe_toxic,obscene,threat,insult,identity_hate: Binary labels for the comment. Comment can have multiple labels.
 
-## Data Prep
+## Data Preprocessing
 
 ### Data Cleansing 
 
@@ -24,11 +24,18 @@ The first step, preprocessing, is mainly cleaning the data by removing any unnec
 - Removed numbers, usernames, and IP addresses.
 - Removed stop words (e.g. “and”, “or”, “the”, “that”, etc.)
 
-### Feature Generation
-
-Term Frequency - Inverse Document 
-
 ## Exploratory Analysis
 
+
+### Feature Generation
+
+TF-IDF (Term Frequency - Inverse Document Frequency)
+
+The term frequency is the frequency of a word in each comment string. The Inverse data frequency is the weight of all words across all comments in the data (i.e. rare words have a high IDF score). Simply, TF-IDF values are associated with words with significance. This function allows the collection of comment strings to be transformed into a numeric vector.
+
 ## Modeling 
+
+Multi-label classificiation
+
+Models: 
 
