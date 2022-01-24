@@ -9,7 +9,9 @@ Source: https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 Header: "id","comment_text","toxic","severe_toxic","obscene","threat","insult","identity_hate"
 
 id: Column to represent the unique identifier for the user
+
 comment_text: string of data that represents the comment
+
 toxic,severe_toxic,obscene,threat,insult,identity_hate: Binary labels for the comment. Comment can have multiple labels.
 
 ## Data Prep
