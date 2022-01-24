@@ -24,9 +24,6 @@ The first step, preprocessing, is mainly cleaning the data by removing any unnec
 - Removed numbers, usernames, and IP addresses.
 - Removed stop words (e.g. “and”, “or”, “the”, “that”, etc.)
 
-### Exploratory Analysis
-
-
 ### Feature Generation
 
 TF-IDF (Term Frequency - Inverse Document Frequency)
@@ -35,8 +32,8 @@ The term frequency is the frequency of a word in each comment string. The Invers
 
 ## Modeling 
 
-Multi-label classificiation
-We trained our models using a one-vs-the-rest approach in order to train a model to classify multiple labels
+Multi-label classification:
+The models were trained using the one-vs-rest strategy which trains an independent classifier for each toxic label. 
 
 Models:
 - Logistic Regression
