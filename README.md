@@ -6,13 +6,15 @@ Semester Project for  Big Data Analytics at the University of Iowa
 ## Data Understanding
 Source: https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 
-Header: "id","comment_text","toxic","severe_toxic","obscene","threat","insult","identity_hate"
-
-  id: Column to represent the unique identifier for the user
-
-  comment_text: string of data that represents the comment
-
-  toxic,severe_toxic,obscene,threat,insult,identity_hate: Binary labels for the comment. Comment can have multiple labels.
+Columns:
+- id: Column to represent the unique identifier for the user
+- comment_text: String of data that represents the comment
+- toxic: Binary label for the comment exhibiting toxic characteristics
+- severe_toxic: Binary label for the comment exhibiting sever_toxic characteristics
+- obscene: Binary label for the comment exhibiting obscene characteristics
+- threat: Binary label for the comment exhibiting threat characteristics
+- insult: Binary label for the comment exhibiting insult characteristics
+- identity_hate: Binary labels for the comment exhibiting identity_hate characteristics
 
 ## Data Preprocessing
 
