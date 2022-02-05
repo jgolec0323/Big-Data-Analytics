@@ -8,11 +8,11 @@ Source: https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 
 Header: "id","comment_text","toxic","severe_toxic","obscene","threat","insult","identity_hate"
 
-id: Column to represent the unique identifier for the user
+  id: Column to represent the unique identifier for the user
 
-comment_text: string of data that represents the comment
+  comment_text: string of data that represents the comment
 
-toxic,severe_toxic,obscene,threat,insult,identity_hate: Binary labels for the comment. Comment can have multiple labels.
+  toxic,severe_toxic,obscene,threat,insult,identity_hate: Binary labels for the comment. Comment can have multiple labels.
 
 ## Data Preprocessing
 
@@ -48,7 +48,7 @@ Models:
 
 In order to compare the results we used two quantitative metrics - ROC-AUC score and F1 score. 
 
-The ROC-AUC score is the area under the Receiver Operating curve. The value of the ROC-AUC score can range from 0 to 1. In a perfect classifier, the ROC-AUC score is equivalent to 1. In a random classifier, the ROC-AUC score is equivalent to 0.5. The ROC-AUC curve is calculated by the true positive rate (sensitivity) vs false positive rate (1-specificity). This is calculated to show the trade-off between specificity and sensitivity. In an ideal world, a classifier will exhibit high sensitivity and specificity. 
+The ROC-AUC score is the area under the Receiver Operating curve. The value of the ROC-AUC score can range from 0 to 1. In a perfect classifier, the ROC-AUC score is equivalent to 1. In a random classifier, the ROC-AUC score is equivalent to 0.5. The ROC-AUC curve is calculated by the true positive rate (sensitivity) vs false positive rate (1-specificity). This is calculated to show the trade-off between specificity and sensitivity. In an ideal model, a classifier will exhibit high sensitivity and specificity. 
 
 The F1 score was also used for model evaluation and performance. The F1 score is the harmonic mean of precision and recall. Precision is the number of correctly classified positive instances out of the total number of instances classified as positive. Recall is the number of correctly classified positive instances out of total number of true positive instances.
 
